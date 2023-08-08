@@ -1,0 +1,229 @@
+main {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-color-white);
+    overflow: hidden;
+}
+
+
+
+/* ----- HEADER ----- */
+
+
+
+header {
+    padding: 24px 48px;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    background-image: url('../../../public/favicon/android-chrome-512x512.png');
+}
+
+header .header_options_wrapper {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+header .header_options_wrapper a {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: min-content;
+    padding: 8px 16px 8px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+header .header_options_wrapper a:hover {
+    background-color: var(--background-color-light-blue);
+    transition: all 0.35s ease-in;
+}
+header .header_options_wrapper a .openai_chatgpt,
+header .header_options_wrapper a .google_bard,
+header .header_options_wrapper a .bing_ai {
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+}
+header .header_options_wrapper a .openai_chatgpt {
+    background-image: url(../../assets/logos/chatgpt.png);
+}
+header .header_options_wrapper a .google_bard {
+    background-image: url(../../assets/logos/bard.gif);
+}
+header .header_options_wrapper a .bing_ai {
+    background-image: url(../../assets/logos/bing_ai.png);
+}
+header .header_options_wrapper .user_profile_wrapper {
+    position: relative;
+}
+header .header_options_wrapper .user_profile_wrapper .user_profile {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: var(--primary-color);  
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622040.jpg'); 
+}
+header .header_options_wrapper .user_profile_wrapper ul.profile_context_menu_closed {
+    display: none;
+}
+header .header_options_wrapper .user_profile_wrapper ul.profile_context_menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: var(--background-color-pure-white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: auto;
+    width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 8px;
+}
+header .header_options_wrapper .user_profile_wrapper ul.profile_context_menu li a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+}
+header .header_options_wrapper .user_profile_wrapper ul.profile_context_menu li a:hover {
+    background-color: var(--background-color-white);
+    transition: all 0.35s ease-out;
+}
+
+
+
+/* ----- LANDING ----- */
+
+
+
+.Landing {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto 480px;
+    width: 100%;
+    height: 80vh;
+}
+
+.Landing .landing_search {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    margin-top: -60px;
+}
+.Landing .landing_search .landing_search_header {
+    text-align: center;
+}
+.Landing .landing_search .landing_search_header  h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    /* color: var(--secondary-color); */
+}
+.Landing .landing_search .search_field {
+    padding: 16px 24px 16px 32px; 
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 25px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: min-content;
+}
+.Landing .landing_search .search_field i {
+    font-size: 24px;
+}
+.Landing .landing_search .search_field input {
+    width: 360px;
+    background: transparent;
+}
+
+.Landing .landing_search .search_field .search_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Landing .landing_search .search_field .search_options .search_btn {
+    background-color: transparent;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+.Landing .landing_search .search_field .search_options .search_btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 25px;
+    transition: 0.35s all ease-in;
+}
+.Landing .landing_search .search_field .search_options .google_search_btn {
+    background-image: url('../../assets/logos/google_logo.png');
+}
+.Landing .landing_search .search_field .search_options .bing_search_btn {
+    background-image: url('../../assets/logos/bing_logo.png');
+}
+.Landing .landing_search .search_field .search_options .duckduckgo_search_btn {
+    background-image: url('../../assets/logos/duckduckgo_logo.png');
+}
+
+
+
+.Landing .landing_tasks .landing_tasks_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+.Landing .landing_tasks .landing_tasks_header h2 {
+    font-size: 18px;
+}
+.Landing .landing_tasks .landing_tasks_header p {
+    font-size: 14px;
+}
+
+.Landing .landing_tasks .landing_tasks_main::-webkit-scrollbar {
+    display: none
+}
+.Landing .landing_tasks .landing_tasks_main {
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: visible;
+    padding: 0 24px;
+}
+
+
+@media (max-width: 1020px) {
+    main {
+        height: auto;
+    }
+    .Landing {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .Landing .landing_search {
+        padding: 60px 0;
+        height: auto;
+    }
+
+    .Landing .landing_tasks {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,45 @@
+.Toast_Close {
+    display: none;
+}
+.Toast {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    
+    display: block;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    background-color: var(--background-color-light-blue);
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 4px;
+    /* border: 1px solid green; */
+}
+.Toast i {
+    font-size: 24px;
+}
+
+.Toast:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 2px;
+    background-color: rgb(255, 47, 47);
+    box-sizing: border-box;
+    animation: border-top-loader 5s linear;
+}
+
+@keyframes border-top-loader {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}

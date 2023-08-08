@@ -1,0 +1,98 @@
+.AddNewTaskOverlay_Close {
+    display: none;
+}
+.AddNewTaskOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background-color: var(--background-color-overlay);
+}
+.AddNewTaskOverlay .AddNewTask {
+    width: 600px;
+    border-radius: 16px;
+    background-color: var(--background-color-white);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AddNewTaskOverlay .AddNewTask div {
+    width: 600px;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Header {
+    padding: 24px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Header p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Header i {
+    font-size: 24px;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main {
+    flex-grow: 1;
+    padding-inline: 32px;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task {
+    font-size: 16px;
+    padding: 8px 0 16px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task label {
+    padding-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color-gamma);
+}
+
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task .AddNewTask_Main_Task_Option {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task input[type='date'],
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task input[type='text']{
+    border: var(--border-color) 1px solid;
+    border-radius: 6px;
+    padding: 16px 24px;
+    background: transparent;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task input[type='date'] {
+    cursor: pointer;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task .AddNewTask_Main_Task_Option input[type='radio'] {
+    height: 20px;
+    width: 20px;
+}
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Main .AddNewTask_Main_Task sub {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 8px;
+    color: var(--text-color-gamma);
+}
+
+.AddNewTaskOverlay .AddNewTask .AddNewTask_Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 24px;
+}

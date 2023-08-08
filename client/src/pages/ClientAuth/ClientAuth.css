@@ -1,0 +1,83 @@
+.Client_Auth {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Client_Auth .Client_Auth_Left {
+    background-image: url('https://images.pexels.com/photos/4069292/pexels-photo-4069292.jpeg');
+}
+
+.Client_Auth .Client_Auth_Right {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.Client_Auth .Client_Auth_Right .app_logo {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    height: 48px;
+    width: 48px;
+    background-image: url('../../../public/favicon/android-chrome-512x512.png');
+}
+
+.Client_Auth .Client_Auth_Right .Client_Auth_Form {
+    padding: 48px;
+}
+
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Header {
+    font-size: 30px;
+    padding-bottom: 48px;
+}
+
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    min-width: 480px;
+}
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Main .Client_Auth_Form_Main_input_field {
+    width: 100%;
+}
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Main .Client_Auth_Form_Main_input_field label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Main .Client_Auth_Form_Main_input_field input {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 12px;
+    width: 100%;
+    background-color: transparent;
+}
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Main .Client_Auth_Form_Main_input_field input:active {
+    border: 1px solid var(--border-color-active);
+    background-color: var(--background-color-white);
+
+}
+
+.Client_Auth .Client_Auth_Right .Client_Auth_Form .Client_Auth_Form_Footer {
+    padding-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: left;
+    align-items: left;
+
+    width: max-content;
+} 
